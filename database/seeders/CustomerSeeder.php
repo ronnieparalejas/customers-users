@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Customer;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -14,12 +15,6 @@ class CustomerSeeder extends Seeder
      */
     public function run()
     {   
-        $companies = [
-            ['name' => 'Pluto Company'], 
-            ['name' => 'Meteor Ltd.'], 
-            ['name' => 'Universe Co.']
-        ];
-
-        DB::table('customers')->insert($companies);
+        Customer::factory()->times(5)->create();
     }
 }

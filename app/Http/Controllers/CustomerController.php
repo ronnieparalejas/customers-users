@@ -11,7 +11,7 @@ class CustomerController extends Controller
         $customers = Customer::orderBy('name')->get();
         
         return view('admin.customer.index', [
-            'rows' => $customers
+            'customers' => $customers
         ]);
     }
 

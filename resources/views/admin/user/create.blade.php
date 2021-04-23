@@ -23,7 +23,7 @@
             </x-admin.form.input>
 
             <x-admin.form.input name="serial" type="text" value="{{ \Str::random() }}" class="bg-gray-100 text-gray-500" readonly>
-                @lang('app.email')
+                @lang('app.serial')
             </x-admin.form.input>
 
             <div class="flex justify-end">

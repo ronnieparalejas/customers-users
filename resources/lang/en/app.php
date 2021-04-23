@@ -1,7 +1,7 @@
 <?php
 
     return [
-        'app_title' => 'Customer and users',
+        'app_title' => 'Customers and users',
         'customer_list' => 'List of customers',
         'customers' => 'Customers',
         'users' => 'Users',

@@ -9,14 +9,14 @@
                 </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-                @forelse($rows as $row)
+                @forelse($customers as $customer)
                 <tr>
                     <x-admin.table.td>
                         <span class="text-gray-500 text-xs">{{ $loop->iteration }}</span>
                     </x-admin.table.td>
                     <x-admin.table.td>
-                        <a href="{{ route('customers.show', $row->id) }}" class="text-sm font-medium text-gray-900 hover:underline">
-                            {{ $row->name }}
+                        <a href="{{ route('customers.show', $customer->id) }}" class="text-sm font-medium text-gray-900 hover:underline">
+                            {{ $customer->name }}
                         </a>
                     </x-admin.table.td>
                 </tr>

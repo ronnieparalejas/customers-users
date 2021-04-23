@@ -1,6 +1,6 @@
 <x-admin.layout>
     <div class="w-full sm:max-w-4xl mt-6">
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between items-center">
             <x-admin.button.back href="{{ route('customers.index') }}">
                 @lang('app.btn.go_back_cust')
             </x-admin.button.back>
